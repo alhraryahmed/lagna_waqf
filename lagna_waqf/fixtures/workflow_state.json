@@ -1,0 +1,227 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "question-sign",
+  "modified": "2025-09-21 18:26:18.572217",
+  "name": "Pending",
+  "style": "",
+  "workflow_state_name": "Pending"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "ok-sign",
+  "modified": "2025-09-21 18:26:18.574559",
+  "name": "Approved",
+  "style": "Success",
+  "workflow_state_name": "Approved"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "remove",
+  "modified": "2025-09-21 18:26:18.576756",
+  "name": "Rejected",
+  "style": "Danger",
+  "workflow_state_name": "Rejected"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-10-01 15:57:58.200808",
+  "name": "مقبول",
+  "style": "Success",
+  "workflow_state_name": "مقبول"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-10-13 16:05:02.388233",
+  "name": "إكتمال النشاط",
+  "style": "Success",
+  "workflow_state_name": "إكتمال النشاط"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-10-01 15:57:49.949055",
+  "name": "مرفوض",
+  "style": "Danger",
+  "workflow_state_name": "مرفوض"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-10-13 16:05:13.993754",
+  "name": "إحالة النشاط",
+  "style": "Primary",
+  "workflow_state_name": "إحالة النشاط"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-10-13 16:04:28.778843",
+  "name": "تكليف بنشاط",
+  "style": "Primary",
+  "workflow_state_name": "تكليف بنشاط"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-10-13 16:05:25.138615",
+  "name": "طلب نشاط",
+  "style": "Inverse",
+  "workflow_state_name": "طلب نشاط"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-10-13 16:04:44.059325",
+  "name": "نشاط معتمد",
+  "style": "Info",
+  "workflow_state_name": "نشاط معتمد"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-10-13 16:04:54.988118",
+  "name": "نشاط محال",
+  "style": "Primary",
+  "workflow_state_name": "نشاط محال"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-09-24 15:01:20.766676",
+  "name": "مستمر",
+  "style": "Success",
+  "workflow_state_name": "مستمر"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-10-13 16:05:08.275280",
+  "name": "إعتماد النشاط",
+  "style": "Info",
+  "workflow_state_name": "إعتماد النشاط"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-10-13 16:04:18.427406",
+  "name": "تكليف معتمد",
+  "style": "Info",
+  "workflow_state_name": "تكليف معتمد"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-09-24 15:00:28.079032",
+  "name": "منقطع",
+  "style": "Danger",
+  "workflow_state_name": "منقطع"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-10-13 16:04:35.504270",
+  "name": "نشاط مكتمل",
+  "style": "Success",
+  "workflow_state_name": "نشاط مكتمل"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-09-24 15:01:14.573288",
+  "name": "موقوف",
+  "style": "Inverse",
+  "workflow_state_name": "موقوف"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-09-24 15:01:29.926952",
+  "name": "جديد",
+  "style": "Info",
+  "workflow_state_name": "جديد"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2026-03-07 15:50:19.278812",
+  "name": "تأخير",
+  "style": "",
+  "workflow_state_name": "تأخير"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2026-03-07 15:50:33.653935",
+  "name": "متأخر",
+  "style": "",
+  "workflow_state_name": "متأخر"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2026-03-07 15:51:32.484119",
+  "name": "في الموعد",
+  "style": "",
+  "workflow_state_name": "في الموعد"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2026-04-01 10:32:54.519029",
+  "name": "المتابعة والتقييم",
+  "style": "Success",
+  "workflow_state_name": "المتابعة والتقييم"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2026-03-07 15:52:24.037354",
+  "name": "تمت المتابعة",
+  "style": "",
+  "workflow_state_name": "تمت المتابعة"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2026-04-01 10:33:10.595787",
+  "name": "تطبيق الحلول",
+  "style": "Danger",
+  "workflow_state_name": "تطبيق الحلول"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2026-04-01 10:32:13.010646",
+  "name": "استكشاف",
+  "style": "Primary",
+  "workflow_state_name": "استكشاف"
+ }
+]

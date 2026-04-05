@@ -5,6 +5,18 @@ app_description = "لجنة رفع الكفائة"
 app_email = "alhraryahmed110@gmail.com"
 app_license = "mit"
 
+fixtures = [
+	{"doctype": "Client Script"},
+	{"doctype": "Server Script"},
+	{"doctype": "Dashboard"},
+	{"doctype": "Dashboard Chart"},
+	{"doctype": "Report"},
+	{"doctype": "Custom HTML Block"},
+	{"doctype": "Print Format"},
+	{"doctype": "Workflow State"},
+	{"doctype": "Workflow"}
+]
+
 # Apps
 # ------------------
 
@@ -246,4 +258,3 @@ app_license = "mit"
 # ------------
 # List of apps whose translatable strings should be excluded from this app's translations.
 # ignore_translatable_strings_from = []
-

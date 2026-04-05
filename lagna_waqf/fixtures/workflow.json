@@ -1,0 +1,109 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Workflow",
+  "document_type": "taqrer",
+  "is_active": 1,
+  "modified": "2026-03-07 16:11:17.282763",
+  "name": "حالة المتابعة",
+  "override_status": 0,
+  "send_email_alert": 1,
+  "states": [
+   {
+    "allow_edit": "Agent",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "parent": "حالة المتابعة",
+    "parentfield": "states",
+    "parenttype": "Workflow",
+    "send_email": 1,
+    "state": "استكشاف",
+    "update_field": "",
+    "update_value": "تأخير عن موعد المتابعة",
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Agent",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "parent": "حالة المتابعة",
+    "parentfield": "states",
+    "parenttype": "Workflow",
+    "send_email": 1,
+    "state": "تطبيق الحلول",
+    "update_field": "",
+    "update_value": "تم تطبيق الحلول",
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Agent",
+    "avoid_status_override": 0,
+    "doc_status": "1",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "parent": "حالة المتابعة",
+    "parentfield": "states",
+    "parenttype": "Workflow",
+    "send_email": 1,
+    "state": "المتابعة والتقييم",
+    "update_field": "",
+    "update_value": "تحت المتابعة والتقييم",
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Agent",
+    "avoid_status_override": 0,
+    "doc_status": "2",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "parent": "حالة المتابعة",
+    "parentfield": "states",
+    "parenttype": "Workflow",
+    "send_email": 1,
+    "state": "متأخر",
+    "update_field": "",
+    "update_value": "تأخير",
+    "workflow_builder_id": null
+   }
+  ],
+  "transitions": [
+   {
+    "action": "استكشاف المشاكل والعراقيل",
+    "allow_self_approval": 1,
+    "allowed": "Agent",
+    "condition": null,
+    "next_state": "تطبيق الحلول",
+    "parent": "حالة المتابعة",
+    "parentfield": "transitions",
+    "parenttype": "Workflow",
+    "send_email_to_creator": 0,
+    "state": "استكشاف",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "تطبيق الحلول ورفع الكفائة",
+    "allow_self_approval": 1,
+    "allowed": "Agent",
+    "condition": null,
+    "next_state": "المتابعة والتقييم",
+    "parent": "حالة المتابعة",
+    "parentfield": "transitions",
+    "parenttype": "Workflow",
+    "send_email_to_creator": 0,
+    "state": "تطبيق الحلول",
+    "workflow_builder_id": null
+   }
+  ],
+  "workflow_data": null,
+  "workflow_name": "حالة المتابعة",
+  "workflow_state_field": "workflow_state2"
+ }
+]

@@ -1,0 +1,189 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "HD Ticket",
+  "enabled": 0,
+  "modified": "2025-12-30 15:36:50.038128",
+  "module": "Helpdesk",
+  "name": "RDP",
+  "script": "frappe.ui.form.on('HD Ticket', {\r\n    remote_desktop: function(frm) {\r\n        // جلب الـ IP من حقل ip_device\r\n        var ip = frm.doc.ip_device;\r\n        \r\n        if (ip) {\r\n            // فتح الرابط باستخدام البروتوكول rdp://\r\n            window.location.href = 'rdp://' + ip;\r\n            \r\n            // إظهار تنبيه للمستخدم\r\n            frappe.show_alert({\r\n                message: __('Opening Remote Desktop for ' + ip),\r\n                indicator: 'green'\r\n            });\r\n        } else {\r\n            // رسالة في حال كان الحقل فارغاً\r\n            frappe.msgprint(__('IP Device field is empty. Please ensure the IP is captured first.'));\r\n        }\r\n    }\r\n});",
+  "view": "Form"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "HD Ticket",
+  "enabled": 1,
+  "modified": "2025-12-30 15:37:30.529216",
+  "module": "Helpdesk",
+  "name": "IPremote",
+  "script": "frappe.ui.form.on('HD Ticket', {\r\n    refresh: function (frm) {\r\n        // Add custom behavior if needed\r\n    },\r\n    remote_desktop: function (frm) {\r\n        if (frm.doc.ip_device) {\r\n            // رابط التطبيق المحلي الخاص بك على البورت 8088\r\n            const local_scanner_url = `http://localhost:8088/?ip=${frm.doc.ip_device}`;\r\n            // فتح الرابط في نافذة جديدة\r\n            window.open(local_scanner_url, '_blank');\r\n            frappe.show_alert({\r\n                message: __('جاري محاولة الاتصال بـ {0}...', [frm.doc.ip_device]),\r\n                indicator: 'blue'\r\n            });\r\n        } else {\r\n            frappe.msgprint(__('يرجى التأكد من وجود عنوان IP في حقل IP Device'));\r\n        }\r\n    }\r\n});",
+  "view": "Form"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "Workspace",
+  "enabled": 0,
+  "modified": "2025-12-07 17:20:30.988727",
+  "module": "ERPNext-sys",
+  "name": "تصميم Workspace",
+  "script": "frappe.ui.workspace['المخزن'] = {\r\n    title: __('المخزن'),\r\n    icon: 'octicon octicon-package',\r\n    color: '#4CAF50',\r\n    short_cuts: [\r\n        { type: 'doctype', name: 'Warehouse', label: __('المخازن'), color: '#FF9800', icon: 'octicon octicon-home' },\r\n        { type: 'doctype', name: 'Item', label: __('الأصناف'), color: '#03A9F4', icon: 'octicon octicon-box' },\r\n        { type: 'doctype', name: 'BOM', label: __('المواد المركبة'), color: '#9C27B0', icon: 'octicon octicon-gear' },\r\n        { type: 'doctype', name: 'Stock Entry', label: __('إدخال كمية للمخزن'), color: '#8BC34A', icon: 'octicon octicon-sync' },\r\n        { type: 'doctype', name: 'Purchase Order', label: __('أمر شراء'), color: '#FF5722', icon: 'octicon octicon-credit-card' },\r\n        { type: 'doctype', name: 'Purchase Request', label: __('طلب مواد'), color: '#00BCD4', icon: 'octicon octicon-list-unordered' }\r\n    ],\r\n    lists: [\r\n        {\r\n            doctype: 'Item',\r\n            title: __('جدول الأصناف'),\r\n            get_list: function() {\r\n                return frappe.db.get_list('Item', {\r\n                    fields: ['item_name','item_code','stock_uom','quantity'],\r\n                    limit_page_length: 10,\r\n                    order_by: 'modified desc'\r\n                });\r\n            }\r\n        },\r\n        {\r\n            doctype: 'Warehouse',\r\n            title: __('قائمة المخازن'),\r\n            get_list: function() {\r\n                return frappe.db.get_list('Warehouse', {\r\n                    fields: ['warehouse_name','company'],\r\n                    limit_page_length: 10,\r\n                    order_by: 'modified desc'\r\n                });\r\n            }\r\n        }\r\n    ]\r\n};\r\n",
+  "view": "Form"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "taq_data1",
+  "enabled": 1,
+  "modified": "2025-10-31 21:30:41.238444",
+  "module": "taqafia",
+  "name": "عدم اضافة الوعاظ الاقل من 23 عام",
+  "script": "frappe.ui.form.on('taq_data1', {\r\n    validate: function(frm) {\r\n        if (frm.doc.agee && frm.doc.agee < 23) {\r\n            frappe.throw(__('يجب أن لا يكون عمر الواعظ أقل من 23 عام'));\r\n        }\r\n    },\r\n    agee: function(frm) {\r\n        if (frm.doc.agee && frm.doc.agee < 23) {\r\n            frappe.msgprint(__('يجب أن لا يكون عمر الواعظ أقل من 23 عام'));\r\n            frm.set_value('agee', '');  // يمسح العمر المدخل\r\n        }\r\n    }\r\n});\r\n",
+  "view": "Form"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "taq_data1",
+  "enabled": 1,
+  "modified": "2025-10-31 21:32:13.921715",
+  "module": "taqafia",
+  "name": "الاحالة للجنة قبول الوعاظ",
+  "script": "frappe.ui.form.on('taq_data1', {\r\n    refresh: function(frm) {\r\n\r\n        // زر الإحالة في taq_data1\r\n        if(!frm.doc.taq_referred) {\r\n            frm.add_custom_button(__('إحالة للجنة قبول الوعاظ'), function() {\r\n\r\n                let new_doc = {\r\n                    doctype: \"lagna_taq\",\r\n                    nameee: frm.doc.name,         \r\n                    nameee_display: frm.doc.namee, \r\n                    makteeeb: frm.doc.makteeb,      \r\n                    taq_data1_ref: frm.doc.name,    \r\n                    taq_data1_id: frm.doc.name,     \r\n                    taq_referred_status: 1          \r\n                };\r\n\r\n                frappe.call({\r\n                    method: \"frappe.client.insert\",\r\n                    args: { doc: new_doc },\r\n                    callback: function(r) {\r\n                        if(!r.exc && r.message) {\r\n                            frappe.msgprint(__('تمت الإحالة إلى لجنة قبول الوعاظ'));\r\n\r\n                            frappe.db.set_value(frm.doctype, frm.doc.name, 'taq_referred', 1);\r\n\r\n                            frappe.set_route(\"Form\", \"lagna_taq\", r.message.name);\r\n                        }\r\n                    }\r\n                });\r\n            });\r\n        }\r\n    }\r\n});\r\n",
+  "view": "Form"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "lagna_taq",
+  "enabled": 1,
+  "modified": "2025-10-01 15:38:00.482735",
+  "module": "taqafia",
+  "name": "عرض تفاصيل مستند الواعظ",
+  "script": "frappe.ui.form.on('lagna_taq', {\r\n    refresh: function(frm) {\r\n\r\n        // إزالة أي أزرار قديمة بنفس الاسم\r\n        frm.clear_custom_buttons();\r\n\r\n        // إضافة زر \"عرض التفاصيل\" فقط إذا كان هناك مرجع\r\n        if(frm.doc.taq_data1_ref) {\r\n            frm.add_custom_button(__('عرض التفاصيل'), function() {\r\n                frappe.set_route(\"Form\", \"taq_data1\", frm.doc.taq_data1_ref);\r\n            });\r\n        }\r\n    }\r\n});\r\n",
+  "view": "Form"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "lagna_taq",
+  "enabled": 1,
+  "modified": "2025-10-06 12:52:02.807500",
+  "module": "taqafia",
+  "name": "وضع اسم المستخدم",
+  "script": "frappe.ui.form.on('lagna_taq', {\r\n    refresh: function(frm) {\r\n        if (!frm.doc.moq) {\r\n            frm.set_value('moq', frappe.session.user);\r\n        }\r\n    }\r\n});\r\n",
+  "view": "Form"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "taq_data1",
+  "enabled": 1,
+  "modified": "2025-10-28 17:56:12.824126",
+  "module": "taqafia",
+  "name": "تصميم",
+  "script": "frappe.ui.form.on('taq_data1', {\r\n    refresh: function(frm) {\r\n        // 🌫️ خلفية زجاجية ناعمة\r\n        $('body').css({\r\n            'background': 'linear-gradient(135deg, #e3f2fd 0%, #ffffff 100%)',\r\n            'font-family': '\"Poppins\", \"Segoe UI\", sans-serif',\r\n            'color': '#1e293b',\r\n            'transition': 'background 0.6s ease'\r\n        });\r\n\r\n        // 🧊 الحاوية الرئيسية للفورم\r\n        $('.form-layout').css({\r\n            'background': 'rgba(255, 255, 255, 0.7)',\r\n            'backdrop-filter': 'blur(14px)',\r\n            '-webkit-backdrop-filter': 'blur(14px)',\r\n            'border-radius': '18px',\r\n            'border': '1px solid rgba(255, 255, 255, 0.5)',\r\n            'box-shadow': '0 8px 25px rgba(0, 0, 0, 0.08)',\r\n            'padding': '35px 40px',\r\n            'margin': '20px auto',\r\n            'max-width': '950px',\r\n            'transition': 'all 0.4s ease'\r\n        }).hide().fadeIn(700);\r\n\r\n        // 🩵 ترويسة الفورم (العنوان الرئيسي)\r\n        $('.page-head .title-text').css({\r\n            'font-size': '1.6rem',\r\n            'font-weight': '600',\r\n            'color': '#0f172a',\r\n            'letter-spacing': '0.5px'\r\n        });\r\n\r\n        // ✨ العناوين الفرعية للأقسام\r\n        $('.form-section .section-head').css({\r\n            'color': '#334155',\r\n            'font-weight': '600',\r\n            'font-size': '1.05rem',\r\n            'border-left': '4px solid #3B82F6',\r\n            'padding-left': '12px',\r\n            'margin-bottom': '10px'\r\n        });\r\n\r\n        // 🎛️ تنسيق الحقول\r\n        $('input, select, textarea').css({\r\n            'border-radius': '10px',\r\n            'border': '1px solid #d1d5db',\r\n            'background': 'rgba(255, 255, 255, 0.9)',\r\n            'padding': '10px 12px',\r\n            'transition': 'all 0.3s ease',\r\n            'font-size': '0.95rem'\r\n        }).focus(function() {\r\n            $(this).css({\r\n                'border-color': '#3B82F6',\r\n                'box-shadow': '0 0 8px rgba(59, 130, 246, 0.4)',\r\n                'background': '#fff'\r\n            });\r\n        }).blur(function() {\r\n            $(this).css({\r\n                'border-color': '#d1d5db',\r\n                'box-shadow': 'none',\r\n                'background': 'rgba(255, 255, 255, 0.9)'\r\n            });\r\n        });\r\n\r\n        // 💠 الأزرار الرئيسية\r\n        $('.primary-action').css({\r\n            'background': 'linear-gradient(90deg, #3B82F6, #06B6D4)',\r\n            'border': 'none',\r\n            'border-radius': '10px',\r\n            'color': '#fff',\r\n            'font-weight': '600',\r\n            'padding': '10px 26px',\r\n            'box-shadow': '0 4px 15px rgba(59, 130, 246, 0.4)',\r\n            'transition': 'all 0.3s ease'\r\n        }).hover(function() {\r\n            $(this).css({\r\n                'transform': 'translateY(-2px)',\r\n                'box-shadow': '0 6px 18px rgba(59, 130, 246, 0.5)'\r\n            });\r\n        }, function() {\r\n            $(this).css({\r\n                'transform': 'translateY(0)',\r\n                'box-shadow': '0 4px 15px rgba(59, 130, 246, 0.4)'\r\n            });\r\n        });\r\n\r\n        // 🌟 تمييز الصفوف في الجداول\r\n        $('.grid-row').hover(function() {\r\n            $(this).css('background', 'rgba(219, 234, 254, 0.4)');\r\n        }, function() {\r\n            $(this).css('background', 'transparent');\r\n        });\r\n\r\n        // 🌈 رسالة نجاح صغيرة عند الفتح\r\n        frappe.show_alert({\r\n            message: __('🌤️ تم تحميل الصفحة بتصميم أنيق'),\r\n            indicator: 'blue'\r\n        }, 4);\r\n    }\r\n});\r\n",
+  "view": "Form"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "Issue",
+  "enabled": 1,
+  "modified": "2025-11-10 12:35:16.367029",
+  "module": "Support",
+  "name": "ربط بيانات المستخدم بالبلاغ",
+  "script": "frappe.ui.form.on('Issue', {\r\n    onload: function(frm) {\r\n        // جلب اسم المستخدم الحالي\r\n        if (!frm.doc.user_account) {\r\n            frm.set_value('user_account', frappe.session.user);\r\n        }\r\n\r\n        // جلب اسم المرسل من DocType User\r\n        frappe.db.get_value('User', frappe.session.user, 'full_name', (r) => {\r\n            if (r && r.full_name) {\r\n                frm.set_value('sender_name', r.full_name);\r\n            }\r\n        });\r\n\r\n        // محاولة جلب اسم الجهاز و IP (يحتاج صلاحيات Client-side)\r\n        frappe.call({\r\n            method: \"frappe.client.get_value\",\r\n            args: {\r\n                doctype: \"User\",\r\n                filters: { \"name\": frappe.session.user },\r\n                fieldname: [\"last_ip\"]\r\n            },\r\n            callback: function(r) {\r\n                if (r.message && r.message.last_ip) {\r\n                    frm.set_value('device_ip', r.message.last_ip);\r\n                }\r\n            }\r\n        });\r\n\r\n        // جلب اسم الجهاز من الـ browser\r\n        try {\r\n            frm.set_value('device_name', window.navigator.userAgent);\r\n        } catch (e) {\r\n            console.log(\"Error fetching device name:\", e);\r\n        }\r\n\r\n        // لا يمكن جلب MAC من المتصفح مباشرة (محظور أمنيًا)\r\n        frm.set_df_property('device_mac', 'description', 'يتم تعبئتها يدويًا لأسباب أمان المتصفح');\r\n    }\r\n});\r\n",
+  "view": "Form"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "zeyarat",
+  "enabled": 1,
+  "modified": "2025-11-12 15:47:52.030530",
+  "module": "Lagnaa",
+  "name": "جلب الصورة من الموقع",
+  "script": "frappe.ui.form.on('اسم_DocType', {\r\n    refresh: function(frm) {\r\n        generate_map(frm);\r\n    },\r\n    الموقع_الخاص_بالمكتب: function(frm) {\r\n        generate_map(frm);\r\n    }\r\n});\r\n\r\nfunction generate_map(frm) {\r\n    if(!frm.doc.الموقع_الخاص_بالمكتب) return;\r\n\r\n    try {\r\n        // تحويل GeoJSON إلى إحداثيات\r\n        let geojson = JSON.parse(frm.doc.الموقع_الخاص_بالمكتب);\r\n        let coords = geojson.features[0].geometry.coordinates;\r\n        let lat = coords[1];\r\n        let lng = coords[0];\r\n\r\n        let api_key = \"YOUR_API_KEY\"; // ضع مفتاح Google Maps الخاص بك هنا\r\n        let url = `https://maps.googleapis.com/maps/api/staticmap?center=${lat},${lng}&zoom=15&size=600x300&markers=color:red|${lat},${lng}&key=${api_key}`;\r\n\r\n        // جلب الصورة وتحويلها إلى Base64\r\n        fetch(url)\r\n            .then(response => response.blob())\r\n            .then(blob => {\r\n                let reader = new FileReader();\r\n                reader.onloadend = function() {\r\n                    let base64data = reader.result.split(',')[1]; // الحصول على Base64 فقط\r\n                    frm.set_value('map_base64', base64data);\r\n                    frm.save(); // حفظ تلقائي للتحديث\r\n                }\r\n                reader.readAsDataURL(blob);\r\n            })\r\n            .catch(err => {\r\n                frappe.msgprint(\"خطأ في توليد الخريطة: \" + err);\r\n            });\r\n    } catch(e) {\r\n        frappe.msgprint(\"خطأ في تحليل الموقع: \" + e.message);\r\n    }\r\n}\r\n",
+  "view": "Form"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "Issue",
+  "enabled": 1,
+  "modified": "2025-11-12 16:16:29.568226",
+  "module": "Support",
+  "name": "فتح تطبيق خارج النظام",
+  "script": "frappe.ui.form.on('Issue', {\r\n    remote_desktob: function(frm) {\r\n        fetch('http://127.0.0.1:5000/run_support')\r\n            .then(res => res.text())\r\n            .then(data => frappe.msgprint(data))\r\n            .catch(err => frappe.msgprint('خطأ في تشغيل التطبيق: ' + err));\r\n    }\r\n});\r\n",
+  "view": "Form"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "erad_waqf",
+  "enabled": 1,
+  "modified": "2026-02-08 15:33:03.667034",
+  "module": "Lagna-waqf",
+  "name": "jesom dowenload",
+  "script": "frappe.listview_settings['erad_waqf'] = {\r\n    refresh: function(listview) {\r\n        \r\n        // 1. إضافة زر الطباعة\r\n        let btn = listview.page.add_inner_button(__('تنزيل / طباعة PDF'), function() {\r\n            \r\n            // إزالة أي تنسيق قديم لتجنب التكرار\r\n            $('#print-style-custom').remove();\r\n\r\n            // 2. إنشاء تنسيق CSS \"شفاف\" يظهر كل ما تراه عينك الآن\r\n            let css = `\r\n                @media print {\r\n                    @page { \r\n                        size: landscape; /* بالعرض لضمان عدم قص الرسم البياني */\r\n                        margin: 5mm; \r\n                    }\r\n                    \r\n                    /* إخفاء القوائم التي لا نريدها فقط */\r\n                    .navbar, .page-head, .sidebar-left, .list-sidebar, .footer, .list-paging-area, .page-actions, .filter-area {\r\n                        display: none !important;\r\n                    }\r\n\r\n                    /* إجبار الصفحة على البدء من الصفر وأخذ العرض الكامل */\r\n                    body, .page-container, .page-content, .layout-container, .layout-main, .layout-main-section {\r\n                        margin: 0 !important;\r\n                        padding: 0 !important;\r\n                        left: 0 !important;\r\n                        width: 100% !important;\r\n                        max-width: 100% !important;\r\n                        display: block !important;\r\n                    }\r\n\r\n                    /* تحسين مظهر الرسم البياني ليظهر تماماً كما في الشاشة */\r\n                    .frappe-chart-container, .list-component {\r\n                        width: 100% !important;\r\n                        visibility: visible !important;\r\n                    }\r\n\r\n                    /* التأكد من جودة الألوان */\r\n                    * {\r\n                        -webkit-print-color-adjust: exact !important;\r\n                        print-color-adjust: exact !important;\r\n                    }\r\n                }\r\n            `;\r\n\r\n            let style = document.createElement('style');\r\n            style.id = 'print-style-custom';\r\n            style.innerHTML = css;\r\n            document.head.appendChild(style);\r\n\r\n            // 3. أمر الطباعة المباشر (يأخذ سكرين لما هو أمامك)\r\n            setTimeout(function() {\r\n                window.print();\r\n            }, 500);\r\n        });\r\n\r\n        // تنسيق الزر\r\n        $(btn).removeClass('btn-default').addClass('btn-primary').css(\"font-weight\", \"bold\");\r\n    }\r\n};",
+  "view": "List"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "HD Ticket",
+  "enabled": 1,
+  "modified": "2026-02-08 14:44:14.699193",
+  "module": "Helpdesk",
+  "name": "helpdesk",
+  "script": "frappe.ui.form.on('HD Ticket', {\r\n    refresh: function(frm) {\r\n       \r\n        \r\n        // Only show button if the document is saved (not new)\r\n        if (!frm.is_new() && is_support) {\r\n            \r\n            // Add the button to the top right menu\r\n            frm.add_custom_button(__('💻 Connect to Client'), function() {\r\n                \r\n                // 1. Fetch the Employee linked to the user who opened the issue (frm.doc.owner)\r\n                frappe.db.get_value('user', { 'email': frm.doc.owner }, 'remote_id')\r\n                    .then(r => {\r\n                        let custom_rustdesk_id = r.message ? r.message.custom_rustdesk_id : null;\r\n\r\n                        if (!custom_rustdesk_id) {\r\n                            frappe.msgprint({\r\n                                title: __('Remote ID Missing'),\r\n                                indicator: 'red',\r\n                                message: __('The employee who opened this issue (' + frm.doc.owner + ') does not have a Remote ID saved.')\r\n                            });\r\n                            return;\r\n                        }\r\n\r\n                        // 2. Define the fixed password\r\n                        let password = \"Awqaf1234Awqaf@@Awqaf\";\r\n                        \r\n                        // 3. Construct the RustDesk URI scheme\r\n                        let connectUrl = \"rustdesk://\" + custom_rustdesk_id;\r\n\r\n                        // 4. Copy password to clipboard and launch\r\n                        navigator.clipboard.writeText(password).then(function() {\r\n                            frappe.show_alert({\r\n                                message: __('Password copied! Opening RustDesk...'),\r\n                                indicator: 'green'\r\n                            }, 5); \r\n                            \r\n                            // Launch RustDesk\r\n                            window.location.href = connectUrl;\r\n                            \r\n                        }).catch(function(err) {\r\n                            // Fallback: If clipboard fails, still try to open RustDesk\r\n                            console.warn('Clipboard copy failed:', err);\r\n                            frappe.show_alert({\r\n                                message: __('Opening RustDesk (Password copy failed)...'),\r\n                                indicator: 'orange'\r\n                            });\r\n                            window.location.href = connectUrl;\r\n                        });\r\n                    });\r\n            }).addClass('btn-primary'); // Make the button blue\r\n        }\r\n    },\r\n\r\n    custom_download_remote_software: function(frm) {\r\n        // 1. Fetch Employee ID linked to the current user\r\n        frappe.db.get_value('user', { 'email': frappe.session.user }, 'name')\r\n            .then(r => {\r\n                let employee_id = r.message ? r.message.name : null;\r\n\r\n                if (!employee_id) {\r\n                    frappe.msgprint({\r\n                        title: __('Error'),\r\n                        indicator: 'red',\r\n                        message: __('Could not find an Employee ID linked to your account.')\r\n                    });\r\n                    return;\r\n                }\r\n\r\n                // 2. Generate the Batch File Content\r\n                // Note: We use double backslashes \\\\ inside the JS string to ensure they appear as single \\ in the file\r\n                let bat_content = `\r\n@echo off\r\nsetlocal EnableDelayedExpansion\r\n\r\n:: --- CONFIGURATION VARIABLES ---\r\nset \"SERVER_IP=160.19.102.66\"\r\nset \"DOWNLOAD_URL=https://system.moomken.org/files/rustdesk-1.4.5-x86_64.exe\"\r\n\r\n:: ERPNext API Details\r\nset \"ERP_URL=https://system.moomken.org\"\r\nset \"API_KEY=b066580f5671bf5\"\r\nset \"API_SECRET=440e8dbf8d71bd9\"\r\nset \"TARGET_ID=${employee_id}\"\r\n\r\n:: RustDesk Settings\r\nset \"INSTALLER_NAME=rustdesk-1.4.5-x86_64.exe\"\r\nset \"PLAIN_PASSWORD=Awqaf1234Awqaf@@Awqaf\"\r\nset \"KEY_STRING=X0ioaq+92YSf5qk+SObdzxEtX2qjOteCGrOdMB4JLnE=\"\r\n:: --------------------------------\r\n\r\n:: [AUTO-ELEVATION]\r\nnet session >nul 2>&1\r\nif %errorLevel% neq 0 (\r\n    echo Requesting Admin rights...\r\n    echo Set UAC = CreateObject^(\"Shell.Application\"^) > \"%temp%\\\\getadmin.vbs\"\r\n    echo UAC.ShellExecute \"%~s0\", \"\", \"\", \"runas\", 1 >> \"%temp%\\\\getadmin.vbs\"\r\n    \"%temp%\\\\getadmin.vbs\"\r\n    del \"%temp%\\\\getadmin.vbs\"\r\n    exit /b\r\n)\r\n\r\necho [Admin Confirmed] Starting Setup...\r\n\r\n:: 1. Download\r\nif not exist \"%~dp0%INSTALLER_NAME%\" (\r\n    echo [1/6] Downloading Installer...\r\n    powershell -Command \"[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; Invoke-WebRequest -Uri '%DOWNLOAD_URL%' -OutFile '%~dp0%INSTALLER_NAME%'\"\r\n)\r\n\r\n:: 2. Install\r\necho [2/6] Installing...\r\n\"%~dp0%INSTALLER_NAME%\" --silent-install\r\n\r\n:: 3. WAITING FOR FILE\r\necho [3/6] Waiting for installation to finish...\r\nset \"RUST_PATH=\"\r\nfor /L %%i in (1,1,20) do (\r\n    if exist \"C:\\\\Program Files\\\\RustDesk\\\\rustdesk.exe\" set \"RUST_PATH=C:\\\\Program Files\\\\RustDesk\\\\rustdesk.exe\" & goto FOUND\r\n    if exist \"C:\\\\Program Files (x86)\\\\RustDesk\\\\rustdesk.exe\" set \"RUST_PATH=C:\\\\Program Files (x86)\\\\RustDesk\\\\rustdesk.exe\" & goto FOUND\r\n    timeout /t 2 /nobreak >nul\r\n)\r\n\r\n:FOUND\r\nif \"%RUST_PATH%\"==\"\" (\r\n    echo [ERROR] Installation timed out. rustdesk.exe not found.\r\n    pause\r\n    exit /b\r\n)\r\necho Found RustDesk at: \"%RUST_PATH%\"\r\n\r\n:: 4. Stop Service\r\necho [4/6] Configuring...\r\nnet stop rustdesk >nul 2>&1\r\n\r\n:: 5. Write Config\r\nset \"PATH_SERVICE=C:\\\\Windows\\\\ServiceProfiles\\\\LocalService\\\\AppData\\\\Roaming\\\\RustDesk\\\\config\"\r\nset \"PATH_USER=%APPDATA%\\\\RustDesk\\\\config\"\r\ncall :WRITE_CONFIG \"%PATH_SERVICE%\"\r\ncall :WRITE_CONFIG \"%PATH_USER%\"\r\n\r\n:: 6. Restart & Set Password\r\nnet start rustdesk >nul 2>&1\r\ntimeout /t 5 /nobreak > NUL\r\n\"%RUST_PATH%\" --password \"%PLAIN_PASSWORD%\"\r\n\r\n:: 7. Send ID to ERPNext (FIXED METHOD)\r\necho [6/6] Sending ID to ERPNext...\r\n\r\n:: Output ID to a temp file first (Bypasses quoting errors)\r\n\"%RUST_PATH%\" --get-id > \"%temp%\\\\rust_id.txt\"\r\nset /p RUST_ID=<\"%temp%\\\\rust_id.txt\"\r\ndel \"%temp%\\\\rust_id.txt\"\r\n\r\nif \"%RUST_ID%\"==\"\" (\r\n    echo [ERROR] Could not retrieve ID.\r\n) else (\r\n    echo ID: !RUST_ID!\r\n    powershell -Command \"try { [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; $res = Invoke-RestMethod -Uri '%ERP_URL%/api/resource/Employee/%TARGET_ID%' -Method Put -Headers @{ 'Authorization' = 'token %API_KEY%:%API_SECRET%' } -Body (@{ 'remote_id' = '!RUST_ID!' } | ConvertTo-Json) -ContentType 'application/json' -ErrorAction Stop; Write-Host 'SUCCESS: Record Updated.' -ForegroundColor Green } catch { Write-Host 'FAILURE: ' $_.Exception.Message -ForegroundColor Red }\"\r\n)\r\n\r\necho.\r\necho DONE.\r\npause\r\nexit /b\r\n\r\n:WRITE_CONFIG\r\nset \"TARGET_DIR=%~1\"\r\nset \"TARGET_FILE=%TARGET_DIR%\\\\RustDesk2.toml\"\r\nif not exist \"%TARGET_DIR%\" mkdir \"%TARGET_DIR%\"\r\n(\r\necho rendezvous_server = 'http://%SERVER_IP%'\r\necho nat_type = 2\r\necho serial = 0\r\necho unlock_pin = ''\r\necho trusted_devices = ''\r\necho.\r\necho [options]\r\necho custom-rendezvous-server = '%SERVER_IP%'\r\necho av1-test = 'Y'\r\necho allow-insecure-tls-fallback = 'Y'\r\necho verification-method = 'use-permanent-password'\r\necho key = '%KEY_STRING%'\r\n) > \"%TARGET_FILE%\"\r\nexit /b\r\n`;\r\n\r\n                // 3. Trigger Download of the .bat file only\r\n                download_blob(bat_content, \"install_remote_support.bat\", \"text/plain\");\r\n                \r\n                frappe.msgprint({\r\n                    title: __('Download Started'),\r\n                    indicator: 'green',\r\n                    message: __('Please run the downloaded batch file as Administrator. It will download and install the software automatically.')\r\n                });\r\n            });\r\n    }\r\n});\r\n\r\n// Helper function to handle blob download\r\nfunction download_blob(content, filename, contentType) {\r\n    var blob = new Blob([content], { type: contentType });\r\n    var url = URL.createObjectURL(blob);\r\n    var link = document.createElement('a');\r\n    link.href = url;\r\n    link.download = filename;\r\n    document.body.appendChild(link);\r\n    link.click();\r\n    document.body.removeChild(link);\r\n}",
+  "view": "Form"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "Stock Ledger Entry",
+  "enabled": 1,
+  "modified": "2026-02-10 11:56:50.282744",
+  "module": "Lagna-waqf",
+  "name": "stock reports",
+  "script": "frappe.listview_settings['Stock Ledger Entry'] = {\r\n    refresh: function(listview) {\r\n        \r\n        // 1. إضافة زر الطباعة\r\n        let btn = listview.page.add_inner_button(__('تنزيل / طباعة PDF'), function() {\r\n            \r\n            // إزالة أي تنسيق قديم لتجنب التكرار\r\n            $('#print-style-custom').remove();\r\n\r\n            // 2. إنشاء تنسيق CSS \"شفاف\" يظهر كل ما تراه عينك الآن\r\n            let css = `\r\n                @media print {\r\n                    @page { \r\n                        size: landscape; /* بالعرض لضمان عدم قص الرسم البياني */\r\n                        margin: 5mm; \r\n                    }\r\n                    \r\n                    /* إخفاء القوائم التي لا نريدها فقط */\r\n                    .navbar, .page-head, .sidebar-left, .list-sidebar, .footer, .list-paging-area, .page-actions, .filter-area {\r\n                        display: none !important;\r\n                    }\r\n\r\n                    /* إجبار الصفحة على البدء من الصفر وأخذ العرض الكامل */\r\n                    body, .page-container, .page-content, .layout-container, .layout-main, .layout-main-section {\r\n                        margin: 0 !important;\r\n                        padding: 0 !important;\r\n                        left: 0 !important;\r\n                        width: 100% !important;\r\n                        max-width: 100% !important;\r\n                        display: block !important;\r\n                    }\r\n\r\n                    /* تحسين مظهر الرسم البياني ليظهر تماماً كما في الشاشة */\r\n                    .frappe-chart-container, .list-component {\r\n                        width: 100% !important;\r\n                        visibility: visible !important;\r\n                    }\r\n\r\n                    /* التأكد من جودة الألوان */\r\n                    * {\r\n                        -webkit-print-color-adjust: exact !important;\r\n                        print-color-adjust: exact !important;\r\n                    }\r\n                }\r\n            `;\r\n\r\n            let style = document.createElement('style');\r\n            style.id = 'print-style-custom';\r\n            style.innerHTML = css;\r\n            document.head.appendChild(style);\r\n\r\n            // 3. أمر الطباعة المباشر (يأخذ سكرين لما هو أمامك)\r\n            setTimeout(function() {\r\n                window.print();\r\n            }, 500);\r\n        });\r\n\r\n        // تنسيق الزر\r\n        $(btn).removeClass('btn-default').addClass('btn-primary').css(\"font-weight\", \"bold\");\r\n    }\r\n};",
+  "view": "List"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "taqrer",
+  "enabled": 1,
+  "modified": "2026-02-22 15:48:12.295048",
+  "module": "Lagna-waqf",
+  "name": "إظهار زر الطباعة في تقرير",
+  "script": "frappe.query_reports[\"report taq\"] = {\r\n    \"filters\": [\r\n        {\r\n            \"fieldname\": \"branch\",\r\n            \"label\": __(\"المكتب\"),\r\n            \"fieldtype\": \"Link\",\r\n            \"options\": \"Department\"\r\n        }\r\n    ],\r\n    \"onload\": function(report) {\r\n        // إضافة زر \"تصدير PDF\" بشكل بارز\r\n        report.page.add_inner_button(__(\"تحميل PDF\"), function() {\r\n            \r\n            const format_name = \"التوصيات والاجراءات\";\r\n            const report_name = \"report taq\";\r\n            let filters = report.get_values();\r\n\r\n            // فتح رابط الطباعة المباشر لتحويله لـ PDF\r\n            let url = `/api/method/frappe.utils.print_format.download_pdf?doctype=Report&name=${report_name}&format=${format_name}&no_letterhead=0&filters=${encodeURIComponent(JSON.stringify(filters))}`;\r\n            \r\n            window.open(url, '_blank');\r\n        }).addClass('btn-primary'); // لون أزرق لتمييز الزر\r\n    }\r\n};",
+  "view": "List"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "taqrer",
+  "enabled": 0,
+  "modified": "2026-03-07 16:11:43.536262",
+  "module": "Lagna-waqf",
+  "name": "يحدد تاريخ المتابعة تلقائياً",
+  "script": "frappe.ui.form.on('taqrer', {\r\n    visit_type: function(frm) {\r\n        if (frm.doc.visit_type == \"استكشاف\") {\r\n\r\n            let today = frappe.datetime.get_today();\r\n            let next_month = frappe.datetime.add_months(today, 1);\r\n\r\n            frm.set_value(\"follow_up_date\", next_month);\r\n        }\r\n    }\r\n});",
+  "view": "Form"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "taqrer",
+  "enabled": 0,
+  "modified": "2026-03-07 16:11:35.291607",
+  "module": "Lagna-waqf",
+  "name": "يجعل الحالة \"متأخر\"",
+  "script": "frappe.ui.form.on('taqrer', {\r\n    refresh(frm) {\r\n\r\n        if (frm.doc.follow_up_date) {\r\n\r\n            let today = frappe.datetime.get_today();\r\n\r\n            if (today > frm.doc.follow_up_date && frm.doc.status_follow != \"تمت المتابعة\") {\r\n                frm.set_value(\"status_follow\", \"متأخر\");\r\n            }\r\n        }\r\n\r\n    }\r\n});",
+  "view": "Form"
+ }
+]
