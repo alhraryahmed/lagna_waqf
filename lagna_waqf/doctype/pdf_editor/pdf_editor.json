@@ -1,0 +1,71 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-01-18 13:14:38.554227",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "\u0627\u0644\u0643\u062a\u0627\u0628\u0629_\u0639\u0644\u0649_\u0627\u0644\u0645\u0644\u0641\u0627\u062a_section",
+  "original_pdf",
+  "signed_pdf",
+  "signing_status",
+  "pdf_editor"
+ ],
+ "fields": [
+  {
+   "fieldname": "\u0627\u0644\u0643\u062a\u0627\u0628\u0629_\u0639\u0644\u0649_\u0627\u0644\u0645\u0644\u0641\u0627\u062a_section",
+   "fieldtype": "Section Break",
+   "label": "\u0627\u0644\u0643\u062a\u0627\u0628\u0629 \u0639\u0644\u0649 \u0627\u0644\u0645\u0644\u0641\u0627\u062a"
+  },
+  {
+   "fieldname": "original_pdf",
+   "fieldtype": "Attach",
+   "in_list_view": 1,
+   "label": "\u0627\u0644\u0645\u0644\u0641 \u0627\u0644\u0623\u0635\u0644\u064a",
+   "reqd": 1
+  },
+  {
+   "fieldname": "signed_pdf",
+   "fieldtype": "Attach",
+   "label": "\u0627\u0644\u0645\u0644\u0641 \u0627\u0644\u0645\u0648\u0642\u0651\u0639"
+  },
+  {
+   "fieldname": "signing_status",
+   "fieldtype": "Select",
+   "label": "\u062d\u0627\u0644\u0629 \u0627\u0644\u0645\u0644\u0641",
+   "options": "\u0645\u0633\u0648\u062f\u0629\n\u0628\u0627\u0646\u062a\u0638\u0627\u0631 \u0627\u0644\u062a\u0648\u0642\u064a\u0639\n\u0645\u0648\u0642\u0651\u0639"
+  },
+  {
+   "fieldname": "pdf_editor",
+   "fieldtype": "HTML Editor",
+   "label": "\u0645\u062d\u0631\u0631 PDF"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-01-18 14:42:08.038085",
+ "modified_by": "Administrator",
+ "module": "Lagna-waqf",
+ "name": "PDF editor",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

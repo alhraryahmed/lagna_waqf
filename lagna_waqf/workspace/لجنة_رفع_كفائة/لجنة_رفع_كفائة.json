@@ -1,0 +1,120 @@
+{
+ "charts": [
+  {
+   "chart_name": "\u0627\u0644\u062f\u0648\u0631\u0627\u062a \u0627\u0644\u062a\u062f\u0631\u064a\u0628\u064a\u0629",
+   "label": "\u0627\u0644\u062f\u0648\u0631\u0627\u062a \u0627\u0644\u062a\u062f\u0631\u064a\u0628\u064a\u0629"
+  },
+  {
+   "chart_name": "\u0642\u064a\u0645\u0629 \u0625\u064a\u0631\u0627\u062f\u0627\u062a \u0627\u0644\u0645\u0643\u0627\u062a\u0628",
+   "label": "\u0642\u064a\u0645\u0629 \u0625\u064a\u0631\u0627\u062f\u0627\u062a \u0627\u0644\u0645\u0643\u0627\u062a\u0628"
+  }
+ ],
+ "content": "[{\"id\":\"0gcnt4a3ex\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"\u0644\u062c\u0646\u0629 \u0627\u0644\u062a\u0637\u0648\u064a\u0631\",\"col\":12}},{\"id\":\"K7JRSDcMwG\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"\u0639\u062f\u062f \u0627\u0644\u062f\u0648\u0631\u0627\u062a \u0627\u0644\u0645\u0642\u062a\u0631\u062d\u0629\",\"col\":4}},{\"id\":\"ZMX9Qr0j41\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"\u0639\u062f\u062f \u0627\u0644\u0627\u064a\u0631\u0627\u062f\u0627\u062a \u0627\u0644\u0645\u062f\u062e\u0644\u0629\",\"col\":4}},{\"id\":\"5dp58Qza2H\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"\u0639\u062f\u062f \u0627\u0644\u062a\u0642\u0627\u0631\u064a\u0631 \u0627\u0644\u0645\u0639\u062f\u0629\",\"col\":4}},{\"id\":\"J0ZCOrQoVk\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"Fmdap5eLxI\",\"type\":\"chart\",\"data\":{\"chart_name\":\"\u0642\u064a\u0645\u0629 \u0625\u064a\u0631\u0627\u062f\u0627\u062a \u0627\u0644\u0645\u0643\u0627\u062a\u0628\",\"col\":6}},{\"id\":\"6f0Qpu_gxP\",\"type\":\"chart\",\"data\":{\"chart_name\":\"\u0627\u0644\u062f\u0648\u0631\u0627\u062a \u0627\u0644\u062a\u062f\u0631\u064a\u0628\u064a\u0629\",\"col\":6}},{\"id\":\"ULgPZAMCkG\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"BULym2LOcn\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"\u0642\u0627\u0626\u0645\u0629 \u0627\u0644\u0627\u064a\u0631\u0627\u062f\u0627\u062a\",\"col\":3}},{\"id\":\"ErJN2VsuNo\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"\u0625\u062f\u062e\u0627\u0644 \u0625\u064a\u0631\u0627\u062f \u062c\u062f\u064a\u062f\",\"col\":3}},{\"id\":\"lfFnqOFWbA\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"\u0625\u0646\u0634\u0627\u0621 \u0648\u0642\u0641 \u0645\u0643\u062a\u0628 \u062c\u062f\u064a\u062f\",\"col\":3}},{\"id\":\"3WHVF6gmUG\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"\u0625\u0646\u0634\u0627\u0621 \u0645\u0643\u062a\u0628 \u062c\u062f\u064a\u062f\",\"col\":3}},{\"id\":\"nK5suNKaFt\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"\u0643\u062a\u0627\u0628\u0629 \u0627\u0644\u062a\u0642\u0627\u0631\u064a\u0631\",\"col\":3}},{\"id\":\"0mzNDnQDMQ\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"\u062a\u0642\u0627\u0631\u064a\u0631 \u0627\u0644\u0627\u062c\u0631\u0627\u0621\u0627\u062a \u0627\u0644\u0645\u0637\u0644\u0648\u0628\u0629 \u0648\u0627\u0644\u062a\u0648\u0635\u064a\u0627\u062a\",\"col\":3}},{\"id\":\"yQufXBrgAp\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"\u0637\u0628\u0627\u0639\u0629 \u062a\u0642\u0627\u0631\u064a\u0631 \u0627\u0644\u062c\u0631\u062f\",\"col\":3}},{\"id\":\"n7yb9YjnWI\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"\u0623\u0639\u0636\u0627\u0621 \u0627\u0644\u0644\u062c\u0646\u0629\",\"col\":3}}]",
+ "creation": "2026-01-27 17:52:30.614554",
+ "custom_blocks": [
+  {
+   "custom_block_name": "\u0644\u062c\u0646\u0629 \u0627\u0644\u062a\u0637\u0648\u064a\u0631",
+   "label": "\u0644\u062c\u0646\u0629 \u0627\u0644\u062a\u0637\u0648\u064a\u0631"
+  }
+ ],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "review",
+ "idx": 0,
+ "indicator_color": "green",
+ "is_hidden": 0,
+ "label": "\u0644\u062c\u0646\u0629 \u0631\u0641\u0639 \u0643\u0641\u0627\u0626\u0629",
+ "links": [],
+ "modified": "2026-03-30 11:40:45.402150",
+ "modified_by": "Administrator",
+ "module": "Lagna-waqf",
+ "name": "\u0644\u062c\u0646\u0629 \u0631\u0641\u0639 \u0643\u0641\u0627\u0626\u0629",
+ "number_cards": [
+  {
+   "label": "\u0639\u062f\u062f \u0627\u0644\u062a\u0642\u0627\u0631\u064a\u0631 \u0627\u0644\u0645\u0639\u062f\u0629",
+   "number_card_name": "\u0639\u062f\u062f \u0627\u0644\u062a\u0642\u0627\u0631\u064a\u0631 \u0627\u0644\u0645\u0639\u062f\u0629"
+  },
+  {
+   "label": "\u0639\u062f\u062f \u0627\u0644\u062f\u0648\u0631\u0627\u062a \u0627\u0644\u0645\u0642\u062a\u0631\u062d\u0629",
+   "number_card_name": "\u0639\u062f\u062f  \u0627\u0644\u0645\u0643\u0627\u062a\u0628 \u0627\u0644\u0645\u0633\u062c\u0644\u0629"
+  },
+  {
+   "label": "\u0639\u062f\u062f \u0627\u0644\u0627\u064a\u0631\u0627\u062f\u0627\u062a \u0627\u0644\u0645\u062f\u062e\u0644\u0629",
+   "number_card_name": "\u0639\u062f\u062f \u0627\u0644\u0627\u064a\u0631\u0627\u062f\u0627\u062a \u0627\u0644\u0645\u062f\u062e\u0644\u0629"
+  }
+ ],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 28.0,
+ "shortcuts": [
+  {
+   "color": "Green",
+   "doc_view": "List",
+   "label": "\u0625\u0646\u0634\u0627\u0621 \u0648\u0642\u0641 \u0645\u0643\u062a\u0628 \u062c\u062f\u064a\u062f",
+   "link_to": "Project",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Orange",
+   "doc_view": "List",
+   "label": "\u0625\u062f\u062e\u0627\u0644 \u0625\u064a\u0631\u0627\u062f \u062c\u062f\u064a\u062f",
+   "link_to": "erad_waqf",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "\u062a\u0642\u0627\u0631\u064a\u0631 \u0627\u0644\u0627\u062c\u0631\u0627\u0621\u0627\u062a \u0627\u0644\u0645\u0637\u0644\u0648\u0628\u0629 \u0648\u0627\u0644\u062a\u0648\u0635\u064a\u0627\u062a",
+   "link_to": "report taq",
+   "report_ref_doctype": "taqrer",
+   "type": "Report"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "\u0623\u0639\u0636\u0627\u0621 \u0627\u0644\u0644\u062c\u0646\u0629",
+   "link_to": "ada_lagna",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "\u0642\u0627\u0626\u0645\u0629 \u0627\u0644\u0627\u064a\u0631\u0627\u062f\u0627\u062a",
+   "link_to": "R",
+   "report_ref_doctype": "erad_waqf",
+   "type": "Report"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "\u0637\u0628\u0627\u0639\u0629 \u062a\u0642\u0627\u0631\u064a\u0631 \u0627\u0644\u062c\u0631\u062f",
+   "type": "URL",
+   "url": "/files/erpnext_viewer_full.html"
+  },
+  {
+   "color": "Blue",
+   "doc_view": "List",
+   "label": "\u0625\u0646\u0634\u0627\u0621 \u0645\u0643\u062a\u0628 \u062c\u062f\u064a\u062f",
+   "link_to": "Cost Center",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Cyan",
+   "doc_view": "List",
+   "label": "\u0643\u062a\u0627\u0628\u0629 \u0627\u0644\u062a\u0642\u0627\u0631\u064a\u0631",
+   "link_to": "taqrer",
+   "stats_filter": "[]",
+   "type": "DocType"
+  }
+ ],
+ "title": "\u0644\u062c\u0646\u0629 \u0631\u0641\u0639 \u0643\u0641\u0627\u0626\u0629"
+}

@@ -1,0 +1,86 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"h8xImMkqk8\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">\u0627\u0644\u0642\u0631\u0622\u0646\u064a\u0629 \u0648\u0627\u0644\u0645\u0633\u0627\u062c\u062f</span>\",\"col\":12}},{\"id\":\"9rVXSU8E-_\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"rI-_fJhXEg\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"\u0643\u062a\u0627\u0628\u0629 \u0627\u0644\u062a\u0642\u0627\u0631\u064a\u0631\",\"col\":3}},{\"id\":\"ivL3qh5Z8l\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"\u0633\u062c\u0644 \u0627\u0644\u0627\u0635\u0648\u0644\",\"col\":3}},{\"id\":\"06r1QzyzTK\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"brvLbgyfQ6\",\"type\":\"card\",\"data\":{\"card_name\":\"\u0627\u0644\u0627\u0635\u0648\u0644 (\u0645\u0631\u0627\u0643\u0632 \u062a\u062d\u0641\u064a\u0638 \u0648\u0645\u0633\u0627\u062c\u062f)\",\"col\":4}}]",
+ "creation": "2026-01-28 15:07:55.628755",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "education",
+ "idx": 0,
+ "indicator_color": "green",
+ "is_hidden": 0,
+ "label": "\u0627\u0644\u0642\u0631\u0622\u0646\u064a\u0629 \u0648\u0627\u0644\u0645\u0633\u0627\u062c\u062f",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u0627\u0644\u0627\u0635\u0648\u0644 (\u0645\u0631\u0627\u0643\u0632 \u062a\u062d\u0641\u064a\u0638 \u0648\u0645\u0633\u0627\u062c\u062f)",
+   "link_count": 3,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u0627\u0644\u0627\u0635\u0648\u0644",
+   "link_count": 0,
+   "link_to": "Asset",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u0645\u062c\u0645\u0648\u0639\u0627\u062a \u0627\u0644\u0627\u0635\u0648\u0644",
+   "link_count": 0,
+   "link_to": "Asset Category",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u062d\u0631\u0643\u0629 \u0627\u0644\u0627\u0635\u0648\u0644",
+   "link_count": 0,
+   "link_to": "Asset Movement",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2026-02-05 10:10:51.918825",
+ "modified_by": "Administrator",
+ "module": "Lagna-waqf",
+ "name": "\u0627\u0644\u0642\u0631\u0622\u0646\u064a\u0629 \u0648\u0627\u0644\u0645\u0633\u0627\u062c\u062f",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "\u0644\u062c\u0646\u0629 \u0631\u0641\u0639 \u0643\u0641\u0627\u0626\u0629",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 31.0,
+ "shortcuts": [
+  {
+   "color": "Blue",
+   "doc_view": "List",
+   "label": "\u0643\u062a\u0627\u0628\u0629 \u0627\u0644\u062a\u0642\u0627\u0631\u064a\u0631",
+   "link_to": "taqrer",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "\u0633\u062c\u0644 \u0627\u0644\u0627\u0635\u0648\u0644",
+   "link_to": "Fixed Asset Register",
+   "report_ref_doctype": "Asset",
+   "type": "Report"
+  }
+ ],
+ "title": "\u0627\u0644\u0642\u0631\u0622\u0646\u064a\u0629 \u0648\u0627\u0644\u0645\u0633\u0627\u062c\u062f"
+}

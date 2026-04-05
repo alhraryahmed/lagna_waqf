@@ -1,0 +1,59 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-02-08 14:58:46.280648",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "\u0623\u0639\u0636\u0627\u0621_\u0627\u0644\u0644\u062c\u0646\u0629_section",
+  "nameee",
+  "sea",
+  "ekh",
+  "seiggn"
+ ],
+ "fields": [
+  {
+   "fieldname": "\u0623\u0639\u0636\u0627\u0621_\u0627\u0644\u0644\u062c\u0646\u0629_section",
+   "fieldtype": "Section Break",
+   "label": "\u0623\u0639\u0636\u0627\u0621 \u0627\u0644\u0644\u062c\u0646\u0629"
+  },
+  {
+   "fieldname": "nameee",
+   "fieldtype": "Data",
+   "label": "\u0627\u0644\u0627\u0633\u0645"
+  },
+  {
+   "fieldname": "sea",
+   "fieldtype": "Select",
+   "label": "\u0627\u0644\u0635\u0641\u0629",
+   "options": "\u0631\u0626\u064a\u0633 \u0627\u0644\u0644\u062c\u0646\u0629\n\u0639\u0636\u0648 \u0627\u0644\u0644\u062c\u0646\u0629"
+  },
+  {
+   "fieldname": "ekh",
+   "fieldtype": "Select",
+   "label": "\u0627\u0644\u0627\u062e\u062a\u0635\u0627\u0635",
+   "options": "\u0627\u0644\u0648\u0642\u0641\n\u0627\u0644\u0645\u0633\u0627\u062c\u062f\n\u0627\u0644\u0642\u0631\u0622\u0646\u064a\u0629\n\u062a\u0642\u0646\u064a\u0629 \u0627\u0644\u0645\u0639\u0644\u0648\u0645\u0627\u062a\n\u0627\u0644\u0634\u0624\u0648\u0646 \u0627\u0644\u0627\u062f\u0627\u0631\u064a\u0629\n\u0627\u0644\u0645\u062a\u0627\u0628\u0639\u0629"
+  },
+  {
+   "fieldname": "seiggn",
+   "fieldtype": "Small Text",
+   "label": "\u0627\u0644\u062a\u0648\u0642\u064a\u0639"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-02-08 15:02:25.745112",
+ "modified_by": "Administrator",
+ "module": "Lagna-waqf",
+ "name": "ada",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

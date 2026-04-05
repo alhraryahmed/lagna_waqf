@@ -1,0 +1,98 @@
+{
+ "charts": [
+  {
+   "chart_name": "\u0642\u064a\u0645\u0629 \u0625\u064a\u0631\u0627\u062f\u0627\u062a \u0627\u0644\u0645\u0643\u0627\u062a\u0628",
+   "label": "\u0642\u064a\u0645\u0629 \u0625\u064a\u0631\u0627\u062f\u0627\u062a \u0627\u0644\u0645\u0643\u0627\u062a\u0628"
+  },
+  {
+   "chart_name": "\u062a\u062d\u0644\u064a\u0644 \u0627\u0644\u0625\u064a\u0631\u0627\u062f\u0627\u062a \u0648\u0627\u0644\u062f\u064a\u0648\u0646",
+   "label": "\u062a\u062d\u0644\u064a\u0644 \u0627\u0644\u0625\u064a\u0631\u0627\u062f\u0627\u062a \u0648\u0627\u0644\u062f\u064a\u0648\u0646"
+  }
+ ],
+ "content": "[{\"id\":\"RLTNhjXcP3\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">\u0627\u0644\u0627\u064a\u0631\u0627\u062f\u0627\u062a \u0627\u0644\u0648\u0642\u0641\u064a\u0629</span>\",\"col\":12}},{\"id\":\"kQ7R979jjP\",\"type\":\"chart\",\"data\":{\"chart_name\":\"\u0642\u064a\u0645\u0629 \u0625\u064a\u0631\u0627\u062f\u0627\u062a \u0627\u0644\u0645\u0643\u0627\u062a\u0628\",\"col\":12}},{\"id\":\"QRGK5Vfok1\",\"type\":\"chart\",\"data\":{\"chart_name\":\"\u062a\u062d\u0644\u064a\u0644 \u0627\u0644\u0625\u064a\u0631\u0627\u062f\u0627\u062a \u0648\u0627\u0644\u062f\u064a\u0648\u0646\",\"col\":12}},{\"id\":\"JDcViXT04D\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"hXeH1_IwuA\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"\u0643\u062a\u0627\u0628\u0629 \u0627\u0644\u062a\u0642\u0627\u0631\u064a\u0631\",\"col\":3}},{\"id\":\"a0pzS-k7XK\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"gmrKQ9egOl\",\"type\":\"card\",\"data\":{\"card_name\":\"\u062a\u0633\u062c\u064a\u0644 \u0627\u0644\u0627\u064a\u0631\u0627\u062f\u0627\u062a \u0648\u0627\u0644\u062f\u064a\u0648\u0646\",\"col\":4}},{\"id\":\"8fFtXPLDVs\",\"type\":\"card\",\"data\":{\"card_name\":\"\u062a\u0642\u0627\u0631\u064a\u0631 \u0645\u062e\u0635\u0635\u0629\",\"col\":4}}]",
+ "creation": "2026-01-27 18:58:28.737089",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "change",
+ "idx": 0,
+ "indicator_color": "green",
+ "is_hidden": 0,
+ "label": "\u0627\u0644\u0627\u064a\u0631\u0627\u062f\u0627\u062a \u0627\u0644\u0648\u0642\u0641\u064a\u0629",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u062a\u0633\u062c\u064a\u0644 \u0627\u0644\u0627\u064a\u0631\u0627\u062f\u0627\u062a \u0648\u0627\u0644\u062f\u064a\u0648\u0646",
+   "link_count": 4,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u062a\u0633\u062c\u064a\u0644 \u0627\u0644\u0627\u064a\u0631\u0627\u062f\u0627\u062a \u0648\u0627\u0644\u062f\u064a\u0648\u0646",
+   "link_count": 0,
+   "link_to": "erad_waqf",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u062a\u0633\u062c\u064a\u0644 \u062d\u0633\u0627\u0628 \u0645\u0643\u062a\u0628 \u0627\u0644\u0648\u0642\u0641",
+   "link_count": 0,
+   "link_to": "Account",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u0645\u0643\u062a\u0628 \u0627\u0644\u0648\u0642\u0641",
+   "link_count": 0,
+   "link_to": "Cost Center",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u0642\u0627\u0626\u0645\u0629 \u0627\u0644\u0627\u064a\u0631\u0627\u062f\u0627\u062a",
+   "link_count": 0,
+   "link_to": "R",
+   "link_type": "Report",
+   "onboard": 0,
+   "report_ref_doctype": "erad_waqf",
+   "type": "Link"
+  }
+ ],
+ "modified": "2026-02-08 02:58:24.279386",
+ "modified_by": "Administrator",
+ "module": "Lagna-waqf",
+ "name": "\u0627\u0644\u0627\u064a\u0631\u0627\u062f\u0627\u062a \u0627\u0644\u0648\u0642\u0641\u064a\u0629",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "\u0644\u062c\u0646\u0629 \u0631\u0641\u0639 \u0643\u0641\u0627\u0626\u0629",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 29.0,
+ "shortcuts": [
+  {
+   "color": "Blue",
+   "doc_view": "List",
+   "label": "\u0643\u062a\u0627\u0628\u0629 \u0627\u0644\u062a\u0642\u0627\u0631\u064a\u0631",
+   "link_to": "taqrer",
+   "stats_filter": "[]",
+   "type": "DocType"
+  }
+ ],
+ "title": "\u0627\u0644\u0627\u064a\u0631\u0627\u062f\u0627\u062a \u0627\u0644\u0648\u0642\u0641\u064a\u0629"
+}

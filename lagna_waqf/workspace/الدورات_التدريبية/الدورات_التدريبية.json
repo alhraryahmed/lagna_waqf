@@ -1,0 +1,126 @@
+{
+ "charts": [
+  {
+   "chart_name": "\u0627\u0644\u062f\u0648\u0631\u0627\u062a \u0627\u0644\u062a\u062f\u0631\u064a\u0628\u064a\u0629",
+   "label": "\u0627\u0644\u062f\u0648\u0631\u0627\u062a \u0627\u0644\u062a\u062f\u0631\u064a\u0628\u064a\u0629"
+  },
+  {
+   "chart_name": "HRR",
+   "label": "\u0627\u0644\u062f\u0648\u0631\u0627\u062a \u0627\u0644\u0645\u0633\u062c\u0644\u0629"
+  }
+ ],
+ "content": "[{\"id\":\"iJowoiFJDX\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">\u0627\u0644\u062f\u0648\u0631\u0627\u062a \u0627\u0644\u062a\u062f\u0631\u064a\u0628\u064a\u0629</span>\",\"col\":12}},{\"id\":\"BE2yiEierR\",\"type\":\"chart\",\"data\":{\"chart_name\":\"\u0627\u0644\u062f\u0648\u0631\u0627\u062a \u0627\u0644\u0645\u0633\u062c\u0644\u0629\",\"col\":6}},{\"id\":\"O_cwGm1bkn\",\"type\":\"chart\",\"data\":{\"chart_name\":\"\u0627\u0644\u062f\u0648\u0631\u0627\u062a \u0627\u0644\u062a\u062f\u0631\u064a\u0628\u064a\u0629\",\"col\":6}},{\"id\":\"M_LyPlZ__H\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"tws3EN3_4d\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Training Program\",\"col\":4}},{\"id\":\"yxREgyBbMe\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Training Event\",\"col\":4}},{\"id\":\"SPVY4Zn1td\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"AuuJ6GM5e2\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"zod54prYnF\",\"type\":\"card\",\"data\":{\"card_name\":\"\u0627\u0644\u0628\u0631\u0627\u0645\u062c \u0627\u0644\u062a\u062f\u0631\u064a\u0628\u064a\u0629\",\"col\":4}},{\"id\":\"ik4U1LIp1E\",\"type\":\"card\",\"data\":{\"card_name\":\"\u0627\u0644\u062a\u0642\u0627\u0631\u064a\u0631 \u0627\u0644\u062a\u062f\u0631\u064a\u0628\u064a\u0629\",\"col\":4}}]",
+ "creation": "2026-01-29 13:46:29.595713",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "share",
+ "idx": 0,
+ "indicator_color": "green",
+ "is_hidden": 0,
+ "label": "\u0627\u0644\u062f\u0648\u0631\u0627\u062a \u0627\u0644\u062a\u062f\u0631\u064a\u0628\u064a\u0629",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u0627\u0644\u0628\u0631\u0627\u0645\u062c \u0627\u0644\u062a\u062f\u0631\u064a\u0628\u064a\u0629",
+   "link_count": 3,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u0627\u0644\u0628\u0631\u0627\u0645\u062c \u0627\u0644\u062a\u062f\u0631\u064a\u0628\u064a\u0629",
+   "link_count": 0,
+   "link_to": "Training Program",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u062a\u0646\u0641\u064a\u0630 \u0627\u0644\u062f\u0648\u0631\u0627\u062a",
+   "link_count": 0,
+   "link_to": "Training Event",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u0646\u062a\u0627\u0626\u062c \u0627\u0644\u062a\u062f\u0631\u064a\u0628",
+   "link_count": 0,
+   "link_to": "Training Result",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u0627\u0644\u062a\u0642\u0627\u0631\u064a\u0631 \u0627\u0644\u062a\u062f\u0631\u064a\u0628\u064a\u0629",
+   "link_count": 2,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u062a\u0642\u064a\u064a\u0645 \u0627\u0644\u062a\u062f\u0631\u064a\u0628 / \u0622\u0631\u0627\u0621 \u0627\u0644\u0645\u062a\u062f\u0631\u0628\u064a\u0646",
+   "link_count": 0,
+   "link_to": "Training Feedback",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u062e\u0631\u064a\u0637\u0629 \u0645\u0647\u0627\u0631\u0627\u062a \u0627\u0644\u0645\u0648\u0638\u0641\u064a\u0646",
+   "link_count": 0,
+   "link_to": "Employee Skill Map",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2026-02-05 12:46:16.269285",
+ "modified_by": "Administrator",
+ "module": "Lagna-waqf",
+ "name": "\u0627\u0644\u062f\u0648\u0631\u0627\u062a \u0627\u0644\u062a\u062f\u0631\u064a\u0628\u064a\u0629",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "\u0644\u062c\u0646\u0629 \u0631\u0641\u0639 \u0643\u0641\u0627\u0626\u0629",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 39.0,
+ "shortcuts": [
+  {
+   "color": "Cyan",
+   "doc_view": "List",
+   "format": "{}\u0627\u0644\u062f\u0648\u0631\u0627\u062a \u0627\u0644\u0645\u0633\u062c\u0644\u0629",
+   "label": "Training Program",
+   "link_to": "Training Program",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Green",
+   "doc_view": "List",
+   "format": "{}\u0627\u0644\u062f\u0648\u0631\u0627\u062a \u0627\u0644\u0645\u0639\u062a\u0645\u062f\u0629",
+   "label": "Training Event",
+   "link_to": "Training Event",
+   "stats_filter": "[]",
+   "type": "DocType"
+  }
+ ],
+ "title": "\u0627\u0644\u062f\u0648\u0631\u0627\u062a \u0627\u0644\u062a\u062f\u0631\u064a\u0628\u064a\u0629"
+}

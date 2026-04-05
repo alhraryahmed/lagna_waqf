@@ -1,0 +1,522 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{branch}-{per}",
+ "creation": "2026-02-01 18:19:02.315522",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "\u0628\u064a\u0627\u0646\u0627\u062a_\u0627\u0644\u0632\u064a\u0627\u0631\u0629_section",
+  "visit_date",
+  "branch",
+  "employee",
+  "per",
+  "loc",
+  "column_break_cusx",
+  "visit_type",
+  "follow_up_date",
+  "\u0627\u0644\u0645\u0644\u0627\u062d\u0638\u0627\u062a_\u0648\u0627\u0644\u062a\u0641\u0627\u0635\u064a\u0644_section",
+  "no",
+  "\u0641\u064a\u0645\u0627_\u064a\u062e\u0635_\u0627\u0644\u0648\u0642\u0641_section",
+  "data_flto",
+  "noo",
+  "kh",
+  "wq",
+  "en",
+  "mo",
+  "\u0642\u0631\u0627\u0631",
+  "column_break_alzq",
+  "maa",
+  "\u0645\u0633\u0627\u0643\u0646",
+  "ze",
+  "\u0623\u0631\u0627\u0636\u064a_\u062a\u0648\u0633\u0640\u0640\u0640\u0640\u0640\u0640\u0640\u0640\u0640\u0639",
+  "\u0623\u0631\u0627\u0636\u064a_\u0627\u0633\u062a\u062b\u0645\u0627\u0631\u064a\u0640\u0629",
+  "\u0645\u0642\u0640\u0627\u0628\u0640\u0640\u0631",
+  "column_break_wrhf",
+  "has",
+  "awa",
+  "\u0641\u064a\u0645\u0627_\u064a\u062e\u0635_\u0627\u0644\u0645\u0633\u0627\u062c\u062f_section",
+  "est",
+  "data_zyzf",
+  "\u0631\u0626\u064a\u0633_\u0648\u062d\u062f\u0629_\u0634\u0624\u0648\u0646_\u0627\u0644\u0639\u0627\u0645\u0644\u064a\u0646",
+  "\u0631\u0626\u064a\u0633_\u0648\u062d\u062f\u0629_\u0627\u0644\u0628\u0646\u0627\u0621_\u0648\u0627\u0644\u0635\u064a\u0627\u0646\u0629",
+  "ms1",
+  "ms2",
+  "ms3",
+  "ms4",
+  "ms5",
+  "ms6",
+  "ms7",
+  "ms8",
+  "ms9",
+  "ms10",
+  "n1",
+  "n2",
+  "\u0627\u0644\u062c\u062f\u0627\u0648\u0644_section",
+  "column_break_eftx",
+  "m50",
+  "table_ngch",
+  "table_ahlq",
+  "table_akax",
+  "table_kofx",
+  "\u0641\u064a\u0645\u0627_\u064a\u062e\u0635_\u0627\u0644\u0642\u0631\u0622\u0646\u064a\u0629_section",
+  "data_uitk",
+  "mrk",
+  "ahl",
+  "tba",
+  "ked",
+  "seya",
+  "mosh",
+  "refa",
+  "column_break_rvnh",
+  "mos",
+  "moha",
+  "\u0639\u062f\u062f_\u0627\u0644\u0645\u062d\u0641\u0638\u064a\u0646_\u0628\u0645\u0643\u0627\u0641\u0623\u0629",
+  "mhka",
+  "mtaw",
+  "motawa",
+  "moj",
+  "\u0639\u062f\u062f_\u0627\u0644\u0637\u0644\u0628\u0629_\u0628\u0645\u0631\u0627\u0643\u0632_\u0627\u0644\u062a\u062d\u0641\u064a\u0638",
+  "\u0639\u062f\u062f\u0627\u0644\u0637\u0627\u0644\u0628\u0627\u062a_\u0628\u0645\u0631\u0627\u0643\u0632_\u0627\u0644\u062a\u062d\u0641\u064a\u0638",
+  "\u0627\u0644\u062a\u0648\u0635\u064a\u0627\u062a_\u0648\u0627\u0644\u0646\u062a\u0627\u0626\u062c_section",
+  "ta",
+  "eg",
+  "result"
+ ],
+ "fields": [
+  {
+   "fieldname": "\u0628\u064a\u0627\u0646\u0627\u062a_\u0627\u0644\u0632\u064a\u0627\u0631\u0629_section",
+   "fieldtype": "Section Break",
+   "label": "\u0628\u064a\u0627\u0646\u0627\u062a \u0627\u0644\u0632\u064a\u0627\u0631\u0629"
+  },
+  {
+   "fieldname": "visit_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "\u062a\u0627\u0631\u064a\u062e \u0627\u0644\u0632\u064a\u0627\u0631\u0629",
+   "options": "Today",
+   "reqd": 1
+  },
+  {
+   "fieldname": "branch",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "\u0627\u0644\u0645\u0643\u062a\u0628",
+   "options": "Department",
+   "reqd": 1
+  },
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "\u0627\u0644\u0642\u0627\u0626\u0645 \u0628\u0627\u0644\u0632\u064a\u0627\u0631\u0629",
+   "options": "User",
+   "reqd": 1
+  },
+  {
+   "fieldname": "per",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "\u0627\u0644\u0627\u062e\u062a\u0635\u0627\u0635",
+   "options": "-\n\u0627\u0644\u0648\u0642\u0641\n\u062a\u0642\u0646\u064a\u0629 \u0627\u0644\u0645\u0639\u0644\u0648\u0645\u0627\u062a\n\u0627\u0644\u0634\u0624\u0648\u0646 \u0627\u0644\u0627\u062f\u0627\u0631\u064a\u0629\n\u0627\u0644\u0645\u0633\u0627\u062c\u062f\n\u0627\u0644\u0642\u0631\u0622\u0646\u064a\u0629\n\u0627\u0644\u0645\u062a\u0627\u0628\u0639\u0629",
+   "reqd": 1
+  },
+  {
+   "fieldname": "loc",
+   "fieldtype": "Link",
+   "label": "\u0627\u0644\u0645\u0648\u0642\u0639",
+   "options": "loc_taq"
+  },
+  {
+   "fieldname": "\u0627\u0644\u0645\u0644\u0627\u062d\u0638\u0627\u062a_\u0648\u0627\u0644\u062a\u0641\u0627\u0635\u064a\u0644_section",
+   "fieldtype": "Section Break",
+   "label": "\u0627\u0644\u0645\u0644\u0627\u062d\u0638\u0627\u062a \u0648\u0627\u0644\u062a\u0641\u0627\u0635\u064a\u0644"
+  },
+  {
+   "fieldname": "no",
+   "fieldtype": "Table",
+   "label": "\u0627\u0644\u0645\u0644\u0627\u062d\u0638\u0627\u062a \u0627\u0644\u0645\u0633\u062c\u0644\u0629",
+   "options": "notes_taqrer"
+  },
+  {
+   "fieldname": "\u0627\u0644\u062a\u0648\u0635\u064a\u0627\u062a_\u0648\u0627\u0644\u0646\u062a\u0627\u0626\u062c_section",
+   "fieldtype": "Section Break",
+   "label": "\u0627\u0644\u062a\u0648\u0635\u064a\u0627\u062a \u0648\u0627\u0644\u0646\u062a\u0627\u0626\u062c"
+  },
+  {
+   "fieldname": "ta",
+   "fieldtype": "Text Editor",
+   "label": "\u0627\u0644\u062a\u0648\u0635\u064a\u0627\u062a"
+  },
+  {
+   "fieldname": "eg",
+   "fieldtype": "Text",
+   "label": "\u0627\u0644\u0625\u062c\u0631\u0627\u0621\u0627\u062a \u0627\u0644\u0645\u0637\u0644\u0648\u0628\u0629"
+  },
+  {
+   "fieldname": "result",
+   "fieldtype": "Select",
+   "label": "\u0646\u062a\u064a\u062c\u0629 \u0627\u0644\u0632\u064a\u0627\u0631\u0629",
+   "options": "\u0645\u0642\u0628\u0648\u0644\n\u064a\u062d\u062a\u0627\u062c \u0645\u062a\u0627\u0628\u0639\u0629"
+  },
+  {
+   "depends_on": "eval:doc.per == '\u0627\u0644\u0648\u0642\u0641'",
+   "fieldname": "\u0641\u064a\u0645\u0627_\u064a\u062e\u0635_\u0627\u0644\u0648\u0642\u0641_section",
+   "fieldtype": "Section Break",
+   "label": "\u0641\u064a\u0645\u0627 \u064a\u062e\u0635 \u0627\u0644\u0648\u0642\u0641"
+  },
+  {
+   "fieldname": "data_flto",
+   "fieldtype": "Data",
+   "label": "\u0627\u0644\u0632\u064a\u0627\u0631\u0629 \u0631\u0642\u0645"
+  },
+  {
+   "depends_on": "eval:doc.per == '\u0627\u0644\u0645\u0633\u0627\u062c\u062f'",
+   "fieldname": "\u0641\u064a\u0645\u0627_\u064a\u062e\u0635_\u0627\u0644\u0645\u0633\u0627\u062c\u062f_section",
+   "fieldtype": "Section Break",
+   "label": "\u0641\u064a\u0645\u0627 \u064a\u062e\u0635 \u0627\u0644\u0645\u0633\u0627\u062c\u062f"
+  },
+  {
+   "fieldname": "data_zyzf",
+   "fieldtype": "Data",
+   "label": "\u0631\u0626\u064a\u0633 \u0642\u0633\u0645 \u0634\u0624\u0648\u0646 \u0627\u0644\u0645\u0633\u0627\u062c\u062f"
+  },
+  {
+   "depends_on": "eval:doc.per == '\u0627\u0644\u0642\u0631\u0622\u0646\u064a\u0629'",
+   "fieldname": "\u0641\u064a\u0645\u0627_\u064a\u062e\u0635_\u0627\u0644\u0642\u0631\u0622\u0646\u064a\u0629_section",
+   "fieldtype": "Section Break",
+   "label": "\u0641\u064a\u0645\u0627 \u064a\u062e\u0635 \u0627\u0644\u0642\u0631\u0622\u0646\u064a\u0629"
+  },
+  {
+   "fieldname": "data_uitk",
+   "fieldtype": "Data",
+   "label": "\u0639\u062f\u062f \u0645\u0631\u0627\u0643\u0632 \u0627\u0644\u062a\u062d\u0641\u064a\u0638 \u0628\u0627\u0644\u0645\u0633\u0627\u062c\u062f"
+  },
+  {
+   "fieldname": "noo",
+   "fieldtype": "Int",
+   "label": "\u0639\u062f\u062f \u0645\u0648\u0638\u0641\u064a \u0627\u0644\u0642\u0633\u0645"
+  },
+  {
+   "fieldname": "kh",
+   "fieldtype": "Select",
+   "label": "\u0627\u0645\u064a\u0646 \u062e\u0632\u064a\u0646\u0629",
+   "options": "-\n\u064a\u0648\u062c\u062f\n\u0644\u0627\u064a\u0648\u062c\u062f"
+  },
+  {
+   "fieldname": "wq",
+   "fieldtype": "Int",
+   "label": "\u0639\u062f\u062f \u0639\u0642\u0627\u0631\u0627\u062a \u0627\u0644\u0648\u0642\u0641"
+  },
+  {
+   "fieldname": "en",
+   "fieldtype": "Data",
+   "label": "\u0645\u0644\u0641\u0627\u062a \u0627\u0644\u0627\u0646\u062a\u0641\u0627\u0639 "
+  },
+  {
+   "fieldname": "column_break_alzq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "mo",
+   "fieldtype": "Int",
+   "label": "\u0639\u062f\u062f \u0627\u0644\u0645\u062a\u0627\u0628\u0639\u064a\u0646 "
+  },
+  {
+   "fieldname": "\u0642\u0631\u0627\u0631",
+   "fieldtype": "Data",
+   "label": "\u0642\u0631\u0627\u0631"
+  },
+  {
+   "fieldname": "maa",
+   "fieldtype": "Data",
+   "label": "\u0645\u062d\u0644\u0627\u062a \u062a\u062c\u0627\u0631\u064a\u0629"
+  },
+  {
+   "fieldname": "\u0645\u0633\u0627\u0643\u0646",
+   "fieldtype": "Data",
+   "label": "\u0645\u0633\u0627\u0643\u0646"
+  },
+  {
+   "fieldname": "ze",
+   "fieldtype": "Data",
+   "label": "\u0623\u0631\u0627\u0636\u064a \u0632\u0631\u0627\u0639\u064a\u0640\u0640\u0629 "
+  },
+  {
+   "fieldname": "\u0623\u0631\u0627\u0636\u064a_\u062a\u0648\u0633\u0640\u0640\u0640\u0640\u0640\u0640\u0640\u0640\u0640\u0639",
+   "fieldtype": "Data",
+   "label": "\u0623\u0631\u0627\u0636\u064a \u062a\u0648\u0633\u0640\u0640\u0640\u0640\u0640\u0640\u0640\u0640\u0640\u0639"
+  },
+  {
+   "fieldname": "\u0623\u0631\u0627\u0636\u064a_\u0627\u0633\u062a\u062b\u0645\u0627\u0631\u064a\u0640\u0629",
+   "fieldtype": "Data",
+   "label": "\u0623\u0631\u0627\u0636\u064a \u0627\u0633\u062a\u062b\u0645\u0627\u0631\u064a\u0640\u0629 "
+  },
+  {
+   "fieldname": "\u0645\u0642\u0640\u0627\u0628\u0640\u0640\u0631",
+   "fieldtype": "Data",
+   "label": "\u0645\u0642\u0640\u0627\u0628\u0640\u0640\u0631 "
+  },
+  {
+   "fieldname": "column_break_wrhf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "has",
+   "fieldtype": "Data",
+   "label": "\u0644\u062c\u0646\u0629 \u0627\u0644\u062d\u0635\u0631 \u0642\u0631\u0627\u0631 \u0631\u0642\u0645 "
+  },
+  {
+   "fieldname": "awa",
+   "fieldtype": "Data",
+   "label": "\u0644\u062c\u0646\u0629 \u0627\u0644\u0639\u0648\u0627\u0626\u062f \u0642\u0631\u0627\u0631 \u0631\u0642\u0645 "
+  },
+  {
+   "fieldname": "mrk",
+   "fieldtype": "Data",
+   "label": "\u0639\u062f\u062f \u0627\u0644\u0645\u0631\u0627\u0643\u0632 \u0627\u0644\u062a\u062d\u0641\u064a\u0638 \u0627\u0644\u0645\u0633\u062a\u0642\u0644\u0629 "
+  },
+  {
+   "fieldname": "ahl",
+   "fieldtype": "Data",
+   "label": "\u0639\u062f\u062f \u0645\u0631\u0627\u0643\u0632 \u0627\u0644\u062a\u062d\u0641\u064a\u0638 \u0627\u0644\u0623\u0647\u0644\u064a\u0629  "
+  },
+  {
+   "fieldname": "tba",
+   "fieldtype": "Select",
+   "label": "\u062a\u0628\u0639\u064a\u0629 \u0627\u0644\u0645\u0631\u0643\u0632",
+   "options": "-\n\u0648\u0642\u0641\n\u063a\u064a\u0631 \u0648\u0642\u0641"
+  },
+  {
+   "fieldname": "ked",
+   "fieldtype": "Data",
+   "label": "\u0639\u062f\u062f \u0645\u0631\u0627\u0643\u0632 \u062a\u062d\u0641\u064a\u0638 \u0642\u064a\u062f \u0627\u0646\u0634\u0627\u0621 "
+  },
+  {
+   "fieldname": "seya",
+   "fieldtype": "Data",
+   "label": "\u0639\u062f\u062f \u0645\u0631\u0627\u0643\u0632 \u0627\u0644\u062a\u062d\u0641\u064a\u0638 \u062a\u062d\u062a\u0627\u062c \u0635\u064a\u0627\u0646\u0629 "
+  },
+  {
+   "fieldname": "mosh",
+   "fieldtype": "Data",
+   "label": "\u0639\u062f\u062f \u0627\u0644\u0645\u0634\u0631\u0641\u064a\u0646"
+  },
+  {
+   "fieldname": "refa",
+   "fieldtype": "Data",
+   "label": "\u0639\u062f\u062f \u0627\u0644\u0645\u0634\u0631\u0641\u0627\u062a"
+  },
+  {
+   "fieldname": "column_break_rvnh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "mos",
+   "fieldtype": "Data",
+   "label": "\u0639\u062f\u062f \u0627\u0644\u0645\u062d\u0641\u0638\u064a\u0646 \u0627\u0644\u0645\u0635\u0646\u0641\u064a\u064a\u0646"
+  },
+  {
+   "fieldname": "moha",
+   "fieldtype": "Data",
+   "label": "\u0639\u062f\u062f\u0627\u0644\u0645\u062d\u0641\u0638\u0627\u062a \u0627\u0644\u0645\u0635\u0646\u0641\u0627\u062a"
+  },
+  {
+   "fieldname": "\u0639\u062f\u062f_\u0627\u0644\u0645\u062d\u0641\u0638\u064a\u0646_\u0628\u0645\u0643\u0627\u0641\u0623\u0629",
+   "fieldtype": "Data",
+   "label": "\u0639\u062f\u062f \u0627\u0644\u0645\u062d\u0641\u0638\u064a\u0646 \u0628\u0645\u0643\u0627\u0641\u0623\u0629 "
+  },
+  {
+   "fieldname": "mhka",
+   "fieldtype": "Data",
+   "label": "\u0639\u062f\u062f\u0627\u0644\u0645\u062d\u0641\u0638\u0627\u062a \u0628\u0645\u0643\u0627\u0641\u0623\u0629"
+  },
+  {
+   "fieldname": "mtaw",
+   "fieldtype": "Data",
+   "label": "\u0639\u062f\u062f \u0627\u0644\u0645\u062d\u0641\u0638\u064a\u0646 \u0627\u0644\u0645\u062a\u0637\u0648\u0639\u064a\u0646 "
+  },
+  {
+   "fieldname": "motawa",
+   "fieldtype": "Data",
+   "label": "\u0639\u062f\u062f\u0627\u0644\u0645\u062d\u0641\u0638\u0627\u062a \u0627\u0644\u0645\u062a\u0637\u0648\u0639\u0627\u062a "
+  },
+  {
+   "fieldname": "moj",
+   "fieldtype": "Data",
+   "label": "\u0639\u062f\u062f \u0627\u0644\u0645\u0648\u062c\u0647\u064a\u0646   \u0628\u0627\u0644\u0645\u0643\u062a\u0628"
+  },
+  {
+   "fieldname": "\u0639\u062f\u062f_\u0627\u0644\u0637\u0644\u0628\u0629_\u0628\u0645\u0631\u0627\u0643\u0632_\u0627\u0644\u062a\u062d\u0641\u064a\u0638",
+   "fieldtype": "Data",
+   "label": "\u0639\u062f\u062f \u0627\u0644\u0637\u0644\u0628\u0629 \u0628\u0645\u0631\u0627\u0643\u0632 \u0627\u0644\u062a\u062d\u0641\u064a\u0638 "
+  },
+  {
+   "fieldname": "\u0639\u062f\u062f\u0627\u0644\u0637\u0627\u0644\u0628\u0627\u062a_\u0628\u0645\u0631\u0627\u0643\u0632_\u0627\u0644\u062a\u062d\u0641\u064a\u0638",
+   "fieldtype": "Data",
+   "label": "\u0639\u062f\u062f\u0627\u0644\u0637\u0627\u0644\u0628\u0627\u062a \u0628\u0645\u0631\u0627\u0643\u0632 \u0627\u0644\u062a\u062d\u0641\u064a\u0638"
+  },
+  {
+   "fieldname": "\u0631\u0626\u064a\u0633_\u0648\u062d\u062f\u0629_\u0634\u0624\u0648\u0646_\u0627\u0644\u0639\u0627\u0645\u0644\u064a\u0646",
+   "fieldtype": "Data",
+   "label": "\u0631\u0626\u064a\u0633 \u0648\u062d\u062f\u0629 \u0634\u0624\u0648\u0646 \u0627\u0644\u0639\u0627\u0645\u0644\u064a\u0646"
+  },
+  {
+   "fieldname": "\u0631\u0626\u064a\u0633_\u0648\u062d\u062f\u0629_\u0627\u0644\u0628\u0646\u0627\u0621_\u0648\u0627\u0644\u0635\u064a\u0627\u0646\u0629",
+   "fieldtype": "Data",
+   "label": "\u0631\u0626\u064a\u0633 \u0648\u062d\u062f\u0629 \u0627\u0644\u0628\u0646\u0627\u0621 \u0648\u0627\u0644\u0635\u064a\u0627\u0646\u0629"
+  },
+  {
+   "fieldname": "ms1",
+   "fieldtype": "Data",
+   "label": "\t\u0625\u062c\u0645\u0627\u0644\u064a \u0639\u062f\u062f \u0627\u0644\u0645\u0633\u0627\u062c\u062f \u0627\u0644\u0639\u0627\u0645\u0644\u0629 \u0627\u0644\u0645\u0639\u062a\u0645\u062f\u0629 "
+  },
+  {
+   "fieldname": "ms2",
+   "fieldtype": "Data",
+   "label": "\u0625\u062c\u0645\u0627\u0644\u064a \u0639\u062f\u062f \u0627\u0644\u0645\u0633\u0627\u062c\u062f \u0627\u0644\u0639\u0627\u0645\u0644\u0629 \u063a\u064a\u0631 \u0627\u0644\u0645\u0639\u062a\u0645\u062f\u0629 "
+  },
+  {
+   "fieldname": "ms3",
+   "fieldtype": "Data",
+   "label": "\u0625\u062c\u0645\u0627\u0644\u064a \u0639\u062f\u062f \u0627\u0644\u0645\u0633\u0627\u062c\u062f \u0642\u064a\u062f \u0627\u0644\u0625\u0646\u0634\u0627\u0621 "
+  },
+  {
+   "fieldname": "ms4",
+   "fieldtype": "Data",
+   "label": "\t\u0625\u062c\u0645\u0627\u0644\u064a \u0639\u062f\u062f \u0627\u0644\u0645\u0633\u0627\u062c\u062f \u0642\u064a\u062f \u0627\u0644\u0625\u0646\u0634\u0627\u0621 \u0628\u0645\u0648\u0627\u0641\u0642\u0629 \u0628\u0646\u0627\u0621 "
+  },
+  {
+   "fieldname": "ms5",
+   "fieldtype": "Data",
+   "label": "\t\u0625\u062c\u0645\u0627\u0644\u064a \u0639\u062f\u062f \u0627\u0644\u0645\u0633\u0627\u062c\u062f \u0642\u064a\u062f \u0627\u0644\u0625\u0646\u0634\u0627\u0621 \u0628\u062f\u0648\u0646 \u0645\u0648\u0627\u0641\u0642\u0629 \u0628\u0646\u0627\u0621 "
+  },
+  {
+   "fieldname": "ms6",
+   "fieldtype": "Data",
+   "label": "\u0625\u062c\u0645\u0627\u0644\u064a \u0639\u062f\u062f \u0627\u0644\u0645\u0633\u0627\u062c\u062f \u0642\u064a\u062f \u0627\u0644\u0635\u064a\u0627\u0646\u0629 "
+  },
+  {
+   "fieldname": "ms7",
+   "fieldtype": "Data",
+   "label": "\u0625\u062c\u0645\u0627\u0644\u064a \u0639\u062f\u062f \u0627\u0644\u0645\u0633\u0627\u062c\u062f \u0627\u0644\u0623\u0647\u0644\u064a\u0629 \u0627\u0644\u0645\u0639\u062a\u0645\u062f\u0629 (\u064a\u0648\u062c\u062f \u0628\u0647\u0627 \u0623\u0645\u0631 \u0648\u0644\u0627\u0626\u064a) "
+  },
+  {
+   "fieldname": "ms8",
+   "fieldtype": "Data",
+   "label": "\t\u0625\u062c\u0645\u0627\u0644\u064a \u0639\u062f\u062f \u0627\u0644\u0645\u0633\u0627\u062c\u062f \u062a\u062f\u0639\u064a \u0627\u0644\u0623\u0647\u0644\u064a\u0629 (\u0644\u0627 \u064a\u062c\u0648\u062f \u0644\u0647\u0627 \u0623\u0645\u0631 \u0648\u0644\u0627\u0626\u064a) "
+  },
+  {
+   "fieldname": "ms9",
+   "fieldtype": "Data",
+   "label": "\u0625\u062c\u0645\u0627\u0644\u064a \u0639\u062f\u062f \u0645\u0644\u0641\u0627\u062a \u0627\u0644\u0645\u0633\u0627\u062c\u062f \u0627\u0644\u0639\u0627\u0645\u0644\u0629 (52)"
+  },
+  {
+   "fieldname": "ms10",
+   "fieldtype": "Data",
+   "label": "\u0625\u062c\u0645\u0627\u0644\u064a \u0639\u062f\u062f \u0627\u0644\u0645\u0633\u0627\u062c\u062f \u0627\u0644\u0639\u0627\u0645\u0644\u0629 \u0648\u0627\u0644\u062a\u064a \u0644\u0627 \u064a\u0648\u062c\u062f \u0644\u0647\u0627 \u0645\u0644\u0641\u0627\u062a \u0628\u0627\u0644\u0645\u0643\u062a\u0628 (\u0644\u0627 \u064a\u0648\u062c\u062f)"
+  },
+  {
+   "fieldname": "column_break_eftx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "bold": 1,
+   "fieldname": "est",
+   "fieldtype": "HTML",
+   "label": "\u0627\u0644\u0647\u062f\u0641 \u0645\u0646 \u0627\u0644\u0627\u0633\u062a\u0628\u064a\u0627\u0646",
+   "options": "<small style=\"color:#6b7280; line-height:1.8;\">\n\u064a\u0647\u062f\u0641 \u0647\u0630\u0627 \u0627\u0644\u0627\u0633\u062a\u0628\u064a\u0627\u0646 \u0625\u0644\u0649 \u062a\u0642\u064a\u064a\u0645 \u0645\u0633\u062a\u0648\u0649 \u0623\u062f\u0627\u0621 \u0623\u0642\u0633\u0627\u0645 \u0634\u0624\u0648\u0646 \u0627\u0644\u0645\u0633\u0627\u062c\u062f \u0628\u0645\u0643\u0627\u062a\u0628 \u0627\u0644\u0623\u0648\u0642\u0627\u0641 \u0628\u0627\u0644\u0645\u0646\u0627\u0637\u0642\u060c\n\u0648\u0627\u0644\u0648\u0642\u0648\u0641 \u0639\u0644\u0649 \u0646\u0642\u0627\u0637 \u0627\u0644\u0642\u0648\u0629 \u0648\u0627\u0644\u0636\u0639\u0641\u060c \u0648\u0631\u0628\u0637 \u0627\u0644\u0646\u062a\u0627\u0626\u062c \u0628\u062e\u0637\u0637 \u0631\u0641\u0639 \u0627\u0644\u0643\u0641\u0627\u0621\u0629 \u0648\u062a\u062d\u0633\u064a\u0646 \u062c\u0648\u062f\u0629 \u0627\u0644\u0639\u0645\u0644\n\u0648\u0641\u0642\u064b\u0627 \u0644\u062a\u0639\u0644\u064a\u0645\u0627\u062a \u0648\u062a\u0639\u0627\u0645\u064a\u0645 \u0647\u064a\u0626\u0629 \u0627\u0644\u0623\u0648\u0642\u0627\u0641 \u0648\u0627\u0644\u0634\u0624\u0648\u0646 \u0627\u0644\u0625\u0633\u0644\u0627\u0645\u064a\u0629.\n</small>\n"
+  },
+  {
+   "fieldname": "m50",
+   "fieldtype": "Table",
+   "label": "\u0627\u0644\u0645\u062d\u0648\u0631 \u0627\u0644\u0623\u0648\u0644 \u0627\u0644\u062a\u0646\u0638\u064a\u0645 \u0627\u0644\u0625\u062f\u0627\u0631\u064a",
+   "options": "mousq1"
+  },
+  {
+   "fieldname": "table_ngch",
+   "fieldtype": "Table",
+   "label": "\u0627\u0644\u0627\u0644\u062a\u0632\u0627\u0645 \u0628\u0627\u0644\u062a\u0639\u0627\u0645\u064a\u0645 \u0648\u0627\u0644\u062a\u0639\u0644\u064a\u0645\u0627\u062a\t",
+   "options": "mousqs3"
+  },
+  {
+   "fieldname": "table_ahlq",
+   "fieldtype": "Table",
+   "label": "\u0634\u0624\u0648\u0646 \u0645\u062a\u0627\u0628\u0639\u0629 \u0627\u0644\u0645\u0633\u0627\u062c\u062f",
+   "options": "mousqs4"
+  },
+  {
+   "fieldname": "table_akax",
+   "fieldtype": "Table",
+   "label": "\u0634\u0624\u0648\u0646 \u0627\u0644\u0639\u0627\u0645\u0644\u064a\u0646 \u0628\u0627\u0644\u0645\u0633\u0627\u062c\u062f",
+   "options": "mousqs5"
+  },
+  {
+   "fieldname": "table_kofx",
+   "fieldtype": "Table",
+   "label": "\u0628\u0646\u0627\u0621 \u0648\u0635\u064a\u0627\u0646\u0629 \u0627\u0644\u0645\u0633\u0627\u062c\u062f",
+   "options": "mousqs6"
+  },
+  {
+   "fieldname": "n1",
+   "fieldtype": "Data",
+   "label": "\u0639\u062f\u062f \u0627\u0644\u0645\u062a\u0627\u0628\u0639\u064a\u0646 \u0627\u0644\u0645\u062a\u0639\u0627\u0648\u0646\u064a\u0646"
+  },
+  {
+   "fieldname": "n2",
+   "fieldtype": "Data",
+   "label": "\u0639\u062f\u062f \u0627\u0644\u0645\u062a\u0627\u0628\u0639\u064a\u0646 \u0627\u0644\u0645\u0635\u0646\u0641\u064a\u0646"
+  },
+  {
+   "depends_on": "eval:doc.per == '\u0627\u0644\u0645\u0633\u0627\u062c\u062f'",
+   "fieldname": "\u0627\u0644\u062c\u062f\u0627\u0648\u0644_section",
+   "fieldtype": "Section Break",
+   "label": "\u0627\u0644\u062c\u062f\u0627\u0648\u0644"
+  },
+  {
+   "fieldname": "column_break_cusx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "visit_type",
+   "fieldtype": "Select",
+   "label": "\u0646\u0648\u0639 \u0627\u0644\u0632\u064a\u0627\u0631\u0629",
+   "options": "\u0627\u0633\u062a\u0643\u0634\u0627\u0641\n\u062a\u0637\u0628\u064a\u0642 \u062d\u0644\u0648\u0644\n\u0645\u062a\u0627\u0628\u0639\u0629 \u0648\u062a\u0642\u064a\u064a\u0645\n\u0645\u062a\u0623\u062e\u0631",
+   "reqd": 1
+  },
+  {
+   "fieldname": "follow_up_date",
+   "fieldtype": "Date",
+   "label": "\u062a\u0627\u0631\u064a\u062e \u0627\u0644\u0645\u062a\u0627\u0628\u0639\u0629",
+   "reqd": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-03-07 16:17:47.514947",
+ "modified_by": "Administrator",
+ "module": "Lagna-waqf",
+ "name": "taqrer",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
